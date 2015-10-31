@@ -1,0 +1,12 @@
+{{outlet}}
+
+<div class="">
+  {{input value=name}}<br/>
+  {{textarea value=text}}<br/>
+  <button type="button" name="button" {{action 'alertName'}}>Show</button>
+</div>
+<ul>
+  {{#each model as |color|}}
+    <li>{{color}}</li>
+  {{/each}}
+</ul>
